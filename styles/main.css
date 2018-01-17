@@ -1,0 +1,42 @@
+* { margin: 0; box-sizing: border-box; } 
+
+body { 
+    font-size: 12px; 
+    line-height: 24px;
+    font-family: Helvetica, sans-serif;
+    color: black;
+}
+
+h1 {
+    font-size: 2rem;
+    color: white;
+    line-height: 36px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+}
+
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 900px;
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+header img {
+    width: 40%;
+    height: auto;
+    float: right;
+}
+
+footer {
+    font-size: 0.6rem;
+}
