@@ -7,29 +7,105 @@
   
     article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
     
-    nav ul {
+    #logo {
+        margin: 0;
+        position: relative;
+        top: 47px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 450px;
+    }
+    .hero {
+        object-fit: cover;
+    width: 50%;
+    height: 300px;
+        float: left;
+    }
+    
+    ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: #4dbbc4;
-    }
-    nav ul li {
-        float: left;
-    }
-    nav ul li a {
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        margin: 0 auto;
-    }
-    nav ul li.active a {
         background-color: white;
         color: #4dbbc4;
     }
-    nav ul li a:hover {
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: #4dbbc4;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    li a:hover {
+        background-color: #4dbbc4;
         font-weight: 800;
+        color: white;
+    }
+    h2 {
+        text-align: center;
+        padding: 20px;
+    }
+    .forecast {
+        display: block;
+        background-color: #4dbbc4;
+        color: white;
+        position: relative;
+        top: 40px;
+        clear: both;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    table, th, td {
+        border: 1px 
+        solid white;
+        text-align: center;
+        background-color:#4dbbc4;
+        color: white;
+    }
+    th {
+        height: 100px;
+    }
+    .current {
+        position: relative;
+        left: 10px;
+    }
+    .highlow {
+        position: relative;
+        left: 40px;
+    }
+    .conditions {
+        position: relative;
+        left: 45px;
+    }
+    
+    article {
+        position: relative;
+        top: 48px;
+        height: 300px;
+    }
+    .article-img {
+        float: right;
+        width: 40%;
+        padding-left: 20px;
+        margin: auto;
+    }
+        footer {
+        margin: auto;
+        text-align: center;
+        width: 100%;
+        color: white;
+        background-color: #4dbbc4;
+        height: 100px;
+        padding: 20px;
+        
     }
 
 }

@@ -8,7 +8,7 @@
     <meta name="author" content="Your Name Here">
     <meta name="description" content="page description placeholder">
     <!-- external style references in the proper cascading order -->    
-    <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet">  <!-- Google API font reference -->
+    <link rel="stylesheet" href="https://use.typekit.net/rgb0btn.css">
     <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
     <link href="styles/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
     <link href="styles/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
@@ -17,46 +17,49 @@
 <body>
 
     <header>
-        <img src="images/ncw-logo.png" alt="The site logo" width="50%" height="">
-        <h1>Frankin City Weather Report</h1>
-        <div class="subheading">Accurate weather updates and storm info for Nimbus County</div>
+        <div class="logo">
+            <a href="#"><img id="logo" src="images/ncw-logo.png" alt="The site logo"></a>
+        </div>
+        <nav>
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="active"><a href="#">Franklin</a></li>
+                <li><a href="#">Greenville</a></li>
+                <li><a href="#">Springfield</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>		
+        </nav>
     </header>
 
     <!-- site navigation use placeholder references -->
-    <nav>
-        <button onclick="toggleNavMenu()">&#9776;</button>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li class="active"><a href="#">Franklin</a></li>
-            <li><a href="#">Greenville</a></li>
-            <li><a href="#">Springfield</a></li>
-            <li><a href="#">Storm Center</a></li>
-            <li><a href="#">Gallery</a></li>
-        </ul>		
-    </nav>
-    
-    <main>
-        <h2>The City of Franklin</h2>
-        <figure>
-            <img src="images/cloudy.jpg">
-        </figure>
-        <section>
-            <h3>Weather Summary</h3>    
-            <div class="highlow">
-                <p>High:</p>  
-                <p>Low:</p>  
-            </div>
-            <div class="current">
-                Sunny
-                <picture>
-                    <img src="images/dusk.jpg" alt="" width="50%" height="">
-                </picture>
-            </div>   
-            <div class="conditions">
-                <p>Precipitation:</p>  
-                <p>Wind Speed:</p>  
-            </div>           
-        </section>
+
+    <main>  
+        <div>
+            <img class="hero" src="images/cloudy.jpg" alt="" height="">
+        </div>
+        <div class="weather">
+            <section>
+                <h2>The City of Franklin</h2>
+                <h3>Weather Summary</h3>  
+                <div class="current">
+                    <div class="sunny">
+                    <h3>Sunny</h3>
+                    </div>
+                    <img class="sunny-image" src="images/sun.png" alt="Sunny" width="120px" height="">
+                </div>  
+                <div class="highlow">
+                    <p>High: <strong>90&deg;</strong></p>
+                    <p>Low: <strong>66&deg;</strong></p>
+                </div>
+ 
+                <div class="conditions">
+                    <p>Precipitation: <strong>24%</strong></p>
+                    <p>Wind Speed: <strong>12 mph</strong></p>  
+                </div>           
+            </section>
+        </div>
         
         <section class="forecast">
             <h3>10 Day Forecast</h3>
@@ -94,10 +97,9 @@
       
         <article>
             <h3>Franklin Breaks Record</h3>	
-            <p class="town-article">
-                <img src="images/fog.jpg" alt="" width="50%" height="">
-                short article content placeholder
-            </p>
+            <div class="town-article">
+                <p><img class="article-img" src="images/fog.jpg" alt="" width="" height="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a ipsum bibendum, posuere enim et, volutpat justo. Sed euismod lectus eu ultricies congue. Praesent gravida turpis diam. Pellentesque semper felis ac dictum bibendum. Aenean iaculis quis est eget convallis. Nulla sed lorem varius, dictum erat eu, tincidunt lorem. Fusce rhoncus arcu nibh, eu vehicula est placerat quis. Nulla lacinia velit eget eros vulputate molestie. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis sit amet lorem et odio dapibus suscipit sit amet nec mauris. Proin tempus enim ac augue varius placerat.</p>
+                </div>
         </article>		  
   
     </main>
