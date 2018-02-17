@@ -1,0 +1,131 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  
+    nav button { display:none; }  /* hamburger button does not need to be shown */
+  
+    article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+    
+    #logo {
+        margin: 0;
+        position: relative;
+        top: 47px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 450px;
+    }
+    picture {
+        display: block;
+    }
+    .hero {
+        display: inline-block;
+        object-fit: cover;
+        width: 50%;
+        height: 300px;
+        float: left;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: white;
+        color: #4dbbc4;
+    }
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: #4dbbc4;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    li a:hover {
+        background-color: #4dbbc4;
+        font-weight: 500;
+        color: white;
+    }
+    h2 {
+        text-align: center;
+    }
+    .forecast {
+        display: block;
+        background-color: #4dbbc4;
+        color: white;
+        clear: both;
+        position: relative;
+        top: 0px;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    table, th, td {
+        border: 1px 
+        solid white;
+        text-align: center;
+        background-color:#4dbbc4;
+        color: white;
+    }
+    th {
+        height: 100px;
+    }
+    .weather {
+        display: inline-block;
+        width: 50%;
+        position: relative;
+        top: 0px;
+        padding-left: 10px;
+    }
+    .sunny {
+        padding-left: 10px;
+        text-align: center;
+    }
+    .sunny-image {
+        margin: 0 auto;
+        width: 100px;
+    }
+    .current {
+        width: 26%;
+    }
+    .highlow {
+        position: absolute;
+        left: 40%;
+        width: 12%;
+    }
+    .conditions {
+        text-align: left;
+        position: absolute;
+        left: 60%;
+        width: 24%;
+    }
+    
+    article {
+
+        height: 300px;
+        margin: 20px;
+    }
+    .article-img {
+        float: right;
+        width: 40%;
+        padding-left: 20px;
+        margin: auto;
+    }
+        footer {
+            position: relative;
+            top: 0px;
+            margin: auto;
+            text-align: center;
+            width: 100%;
+            color: white;
+            background-color: #4dbbc4;
+            height: 100px;
+            padding: 20px;
+
+    }
+
+}

@@ -1,0 +1,134 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+  
+    
+    picture {
+        display: block;
+    }
+    .hero {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        height: 240px;
+        z-index: 10;
+        padding-bottom: 20px;
+    }
+    #logo {
+        margin: 0;
+        position: relative;
+        top: 52px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: white;
+        color: #4dbbc4;
+    }
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: #4dbbc4;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    li a:hover {
+        background-color: #4dbbc4;
+        font-weight: 500;
+        color: white;
+    }
+    h2 {
+        text-align: center;
+    }
+        .weather {
+        display: block;
+        width: 100%;
+        position: static;
+    }
+    .forecast {
+        display: block;
+        background-color: #4dbbc4;
+        color: white;
+        position: relative;
+        top: -20px;
+        clear: both;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    table, th, td {
+        border: 1px 
+        solid white;
+        text-align: center;
+        background-color:#4dbbc4;
+        color: white;
+    }
+    th {
+        height: 100px;
+    }
+    .weather {
+        height: 240px;
+        
+    }
+    .current {
+        display: inline-block;
+        width: 33%;
+    }
+    .sunny {
+        position: relative;
+        top: 12px;
+        left: 100px;
+    }
+    .sunny-image {
+        position: relative;
+        top: -80px;
+        left: 100px;
+    }
+    .highlow {
+        display: inline-block;
+        position: relative;
+        left: 2px;
+        top: -20px;
+        width: 33%;
+        text-align: center;
+    }
+    .conditions {
+        display: inline-block;
+        width: 33%;
+        text-align: center;
+    }
+    article {
+        position: relative;
+        top: 48px;
+        height: 400px;
+    }
+    .article-img {
+        float: right;
+        width: 40%;
+        padding-left: 20px;
+        margin: auto;
+    }
+    footer {
+        position: relative;
+        top: 0px;
+        display: inline-block;
+        margin: auto;
+        text-align: center;
+        width: 100%;
+        color: white;
+        background-color: #4dbbc4;
+        height: 100px;
+        padding: 20px;
+        
+    }
+}

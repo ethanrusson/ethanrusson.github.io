@@ -1,0 +1,176 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    /* font-family: "Nimbus Sans light", sans-serif; */
+    font-family: "Fira Sans Condensed", sans serif;
+    font-size: 16px;
+    padding: 12px;
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+.logo {
+    margin: 0 auto;
+    align-content: center;
+    background-color: #4dbbc4;
+}
+    #logo {
+        margin: 0;
+        position: relative;
+        top: 32px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+    }
+picture {
+    display: block;
+}
+.hero {
+    display: block;
+    object-fit: cover;
+    padding-bottom: 20px;
+    width: 100%;
+}
+header {
+}
+header h1 {
+    /* font-family: "Nimbus Sans Bold", sans-serif; */
+    font-family: "Fira Sans Condensed", sans serif;
+}
+header img {
+}
+header .subheading {}
+
+
+nav {}
+
+
+
+
+button {
+    width: 100%;
+    background-color: #4dbbc4;
+    color: white;
+    border: none;
+}
+button:hover {
+    background-color: white;
+    border: none;
+    color: #4dbbc4;
+}
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #4dbbc4;
+        color: white;
+    }
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-weight: 300;
+    }
+    li a:hover {
+        background-color: white;
+        color: #4dbbc4;
+    }
+
+main {}
+main h2 {
+    /* font-family: "Nimbus Sans Bold", sans-serif; */
+    font-family: "Fira Sans Condensed", sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.weather {
+    display: block;
+}
+.current {
+    float: left;
+    margin: 0 auto;
+}
+h3 {
+    text-align: center;
+}
+.highlow {
+    margin: 0 auto;
+}
+.highlow p {
+    text-align: center;
+    padding: 10px;
+    display: inline-block;
+}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { width: 100%; }
+
+section {}
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width: ???; /* fill the page in the small/phone view */
+  margin: ???;
+}
+.forecast {
+    display:none;
+}
+article {
+    position: relative;
+    top: 48px;
+    height: 300px;
+    clear: both;
+}
+.article-img {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+.weather {
+    display: block;
+}
+.highlow {
+    text-align: center;
+}
+.conditions {
+    text-align: center;
+}
+footer {
+    position: relative;
+    top: 300px;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    color: white;
+    background-color: #4dbbc4;
+    height: 100px;
+    padding: 20px;    
+    }
+
+@media only screen and (max-width: 37.5em) {
+    .navigation { list-style: none; padding-left: 0; }
+.navigation li { display: none; }
+
+.navigation.responsive { 
+    position: relative; 
+}
+.navigation.responsive li {  
+    color: white;
+    display: block; 
+    width: 100%; 
+    margin: 2px 0; 
+}
+.navigation.responsive li a { 
+    padding: 1rem; 
+    text-align: center;  
+    display: block; 
+    text-decoration:none;
+}
+.navigation.responsive li a:hover { 
+    font-weight: 600;
+}
+}
