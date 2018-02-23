@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Frankin City Weather Report</title>
+    <meta name="author" content="Ethan Russon">
+    <meta name="description" content="Accurate weather updates and storm info for Nimbus County">
+    <!-- external style references in the proper cascading order -->    
+    <!-- <link rel="stylesheet" href="https://use.typekit.net/rgb0btn.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300,300i,700,700i,900,900i" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+    <link href="styles/main-7.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+    <link href="styles/medium-7.css" rel="stylesheet">  <!-- medium/tablet views -->
+    <link href="styles/large-7.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="#"> <img id="logo" src="images/ncw-logo.png" alt="The site logo"> </a>
+        </div>
+        <nav>
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <div class="container-nav">
+            <ul class="navigation">
+                <li><a href="franklin-7.html">Home</a></li>
+                <li><a href="#">Franklin</a></li>
+                <li><a href="#">Greenville</a></li>
+                <li><a href="#">Springfield</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="gallery-7.html">Gallery</a></li>
+            </ul>	
+            </div>
+        </nav>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+
+    <main>  
+        
+        <div>
+            <picture>
+                <source class="hero-small" media="(max-width: 37.5em)" srcset="images/franklin-small.jpg">
+                <source class="hero-medium" media="(max-width: 60em)" srcset="images/franklin-medium.jpg">
+                <img class="hero" src="images/franklin-large.jpg" alt="Franklin Weather">
+            </picture>
+        </div>
+        
+        <div class="weather-header">
+            <h2>The City of Franklin</h2>
+            <h3>Weather Summary</h3> 
+        </div>
+        
+        <div class="weather">
+           <div>
+               <h3>Sunny</h3>
+                <img class="sunny-image" src="images/sun.png" alt="Sunny" >
+            </div>
+            
+            <div>
+                <p>High: <strong>90&deg;</strong></p>
+                <p>Low: <strong>66&deg;</strong></p>
+            </div>
+            
+            <div>
+                <p>Precipitation: <strong>24%</strong></p>
+                <p>Wind Speed: <strong>12 mph</strong></p>  
+                <p>Wind Chill: <strong><span id="windchill"></span></strong></p>
+            </div>
+            
+        </div>
+        
+        <div class="forecast">
+            <section>
+                <h3>10 Day Forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>  
+                        <tr>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>79&deg;F</td>
+                            <td>83&deg;F</td>
+                            <td>85&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+      
+        <article>
+            <div class="article-container">
+                <div class="text-body">
+                    <h3>Franklin Breaks Record</h3>	
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a ipsum bibendum, posuere enim et, volutpat justo. Sed euismod lectus eu ultricies congue. Praesent gravida turpis diam. Pellentesque semper felis ac dictum bibendum. Aenean iaculis quis est eget convallis. Nulla sed lorem varius, dictum erat eu, tincidunt lorem. Fusce rhoncus arcu nibh, eu vehicula est placerat quis. Nulla lacinia velit eget eros vulputate molestie. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis sit amet lorem et odio dapibus suscipit sit amet nec mauris. Proin tempus enim ac augue varius placerat.</p>
+                </div>
+                
+                <div>
+                    <img class="article-img" src="images/fog.jpg">
+                </div>
+            </div>
+        </article>		  
+  
+    </main>
+    
+    <footer>
+        <aside>
+            Contact information placeholder
+        </aside>
+        <p class="footer-bar">&copy;2017 All Rights Reserved | Nimbus County Weather | <span id="currentdate"></span></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+
+</body>
+</html>
