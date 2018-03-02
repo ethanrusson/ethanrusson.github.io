@@ -206,6 +206,10 @@ input[type=submit] {
     padding: 12px;
 }
 
+input[type=submit]:hover {
+    background-color: #1B4144;
+}
+
 .storm-types {
     width: 100%;
     padding: 12px;
@@ -220,4 +224,12 @@ input[type=submit] {
 
 .col-75 {
     width: 100%;
+}
+
+/*thankyou*/
+
+.thankyou {
+    text-align: center;
+    height: 500px;
+    padding-top: 50px;
 }
