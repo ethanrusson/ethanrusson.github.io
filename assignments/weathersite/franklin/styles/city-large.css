@@ -1,0 +1,128 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    * { margin: 0; box-sizing: border-box; } 
+    
+    picture {
+        display: block;
+    }
+    .hero {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        height: 240px;
+        z-index: 10;
+        padding-bottom: 20px;
+    }
+    #logo {
+        margin: 0;
+        position: relative;
+        top: 52px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+    }
+    .navigation {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin: 0;
+        overflow: hidden;
+        background-color: white;
+        color: #4dbbc4;
+    }
+    
+    .navigation {
+        background-color: white;  
+    }
+    
+    li {
+      justify-content: center;
+    }
+
+    li a {
+        display: block;
+        color: #4dbbc4;
+        text-align: center;
+        padding: 12px 32px;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    
+    li a:hover {
+        background-color: #4dbbc4;
+        font-weight: 500;
+        color: white;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+    
+    .gallery {
+        margin-left: 100px;
+        margin-right: 100px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+
+    .gallery-img {
+        width: 100%;
+    }
+    
+    .gallery-div {
+        padding: 10px;
+    }
+    
+    .gallery-div:hover {
+        box-shadow: 0px 0px 20px #C0C0C0;
+    }
+    
+    .weather {
+        width: 100%;
+        height: 240px;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        align-items: center;
+        line-height: 2;
+    }
+    
+    
+    .forecast {
+        display: block;
+        background-color: #4dbbc4;
+        color: white;
+        position: relative;
+        top: -20px;
+        clear: both;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    table, th, td {
+        border: 1px 
+        solid white;
+        text-align: center;
+        background-color:#4dbbc4;
+        color: white;
+    }
+    th {
+        height: 100px;
+    }
+    
+    footer {
+        position: relative;
+        top: 0px;
+        display: inline-block;
+        margin: auto;
+        text-align: center;
+        width: 100%;
+        color: white;
+        background-color: #4dbbc4;
+        height: 100px;
+        padding: 20px; 
+    }
+}
