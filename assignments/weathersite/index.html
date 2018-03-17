@@ -24,10 +24,10 @@
             <button onclick="toggleNavMenu()">&#9776;</button>
             <div class="container-nav">
             <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
+                <li><a class="selected" href="index.html">Home</a></li>
                 <li><a href="franklin/franklin.html">Franklin</a></li>
-                <li><a href="#">Greenville</a></li>
-                <li><a href="#">Springfield</a></li>
+                <li><a href="/assignments/weathersite/franklin/greenville.html">Greenville</a></li>
+                <li><a href="/assignments/weathersite/franklin/springfield.html">Springfield</a></li>
                 <li><a href="/assignments/weathersite/franklin/stormcenter.html">Storm Center</a></li>
                 <li><a href="/assignments/weathersite/franklin/gallery.html">Gallery</a></li>
             </ul>	
@@ -48,6 +48,7 @@
         </div>
         
         <div class="city-card-container">
+            <a class="city-link" href="/assignments/weathersite/franklin/franklin.html">
             <div class="city-card">
                 <div class="left-text text-flip">
                     <h1 id="town-name-1"></h1>
@@ -56,13 +57,15 @@
                     <p>Current Population: <span id="pop-1"></span></p>
                     <p>Average Rainfall: <span id="rain-1"></span>"</p>
                     <p id="events-1"></p>
+                    <br>
                 </div>
                 <div class="img-flip">
                     <img class="img-right" src="images/gallery4.jpg" alt="mountain range">
                 </div>    
             </div>
+            </a>
 
-            <div class="city-card">
+            <a class="city-link" href="/assignments/weathersite/franklin/greenville.html"><div class="city-card">
                 <div class="left-text">
                     <h1 id="town-name-2"></h1>
                     <p id="motto-2"></p>
@@ -75,8 +78,9 @@
                     <img class="img-right" src="images/gallery5.jpg" alt="sunny field">
                 </div>    
             </div>
+            </a>
 
-            <div class="city-card">
+            <a class="city-link" href="/assignments/weathersite/franklin/springfield.html"><div class="city-card">
                 <div class="left-text text-flip">
                     <h1 id="town-name-3"></h1>
                     <p id="motto-3"></p>
@@ -85,27 +89,12 @@
                     <p>Average Rainfall: <span id="rain-3"></span>"</p>
                     <p id="events-3"></p>
                     <br>
-                    <br>
                 </div>
                 <div class="img-flip">
                     <img class="img-right" src="images/gallery6.jpg" alt="misty mountains">
                 </div>    
             </div>
-            
-            <div class="city-card">
-                <div class="left-text">
-                    <h1 id="town-name-4"></h1>
-                    <p id="motto-4"></p>
-                    <p>Founded: <span id="founded-4"></span></p>
-                    <p>Current Population: <span id="pop-4"></span></p>
-                    <p>Average Rainfall: <span id="rain-4"></span>"</p>
-                    <p id="events-4"></p>
-                    <br>
-                </div>
-                <div>
-                    <img class="img-right" src="images/gallery2.jpg" alt="lightning storm">
-                </div>    
-            </div>
+            </a>
             
         </div>
         

@@ -56,6 +56,12 @@ li a {
     text-decoration: none;
     font-weight: 300;
 }
+
+.selected {
+    background-color: rgba(77, 187, 196, 0.5);
+    color: white;
+}
+
 li a:hover {
     background-color: white;
     color: #4dbbc4;
@@ -85,6 +91,10 @@ h3 {
     box-shadow: 0px 0px 20px #C0C0C0;
 }
 
+.weather-story:hover {
+    box-shadow: 0px 0px 20px gray;
+}
+
 .left-text {
     padding: 20px;
 }
@@ -110,6 +120,15 @@ h3 {
 .city-card {
     box-shadow: 0px 0px 20px #C0C0C0;
     line-height: 1.5em;
+}
+
+.city-card:hover {
+    box-shadow: 0px 0px 20px gray;
+}
+
+.city-link {
+    text-decoration: none;
+    color: black;
 }
 
 footer {
