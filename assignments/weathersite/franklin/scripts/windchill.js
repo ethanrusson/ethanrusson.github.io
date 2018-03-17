@@ -1,7 +1,7 @@
 windChill();
 function windChill() {
-    var h = 90;
-    var l = 66;
+    var h = 24;
+    var l = 12;
     var t = (h + l) / 2;
     var s = Math.pow(12, 0.16);
 

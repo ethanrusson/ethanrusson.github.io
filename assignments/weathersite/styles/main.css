@@ -131,6 +131,11 @@ h3 {
     color: black;
 }
 
+.footer-link {
+    text-decoration: none;
+    color: white;
+}
+
 footer {
     top: 300px;
     margin: auto;
