@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Mountain Spoke | Mountain Biking Gear, Repair, and Tours | Bozeman, Montana</title>
-        <meta name="description" content="">
+        <meta name="description" content="Mountain Biking Gear, Repair, and Tours based in Bozeman, Montana">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="manifest" href="site.webmanifest">
@@ -14,78 +14,88 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300i,700i|Shrikhand">
     </head>
     <body>
-        <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-                
-        <div class="nav">
-            <div class="nav-content">
-                <a id="logo" href="/"><img class="logo" src="img/logo.svg" alt="Mountain Spoke Logo"></a>
-                <a id="menu1" href="shop.html">Shop</a>
-                <a id="menu2" href="repairs.html">Repairs</a>
-                <a id="menu3" href="tours.html">Tours</a>
-                <a id="menu4" href="events.html">Events</a>
-                <a id="menu5" href="contact.html">Contact</a>
+        <div id="blur1">     
+            <div class="nav">
+                <div class="nav-content">
+                    <a id="logo" href="/"><img class="logo" src="img/logo.svg" alt="Mountain Spoke Logo"></a>
+                    <button onclick="openNav()">&#9776;</button>
+                    <a id="menu1" href="shop.html">Shop</a>
+                    <a id="menu2" href="repairs.html">Repairs</a>
+                    <a id="menu3" href="tours.html">Tours</a>
+                    <a id="menu4" href="events.html">Events</a>
+                    <a id="menu5" href="contact.html">Contact</a>
+                </div>
             </div>
-        </div>
-        
-        <div class="menu-border"></div>
 
-        <div class="background">
-            <img src="img/sam-x-42021-unsplash.jpg">
-            <div class="slider">
-                <h1>High Performance Bikes &amp; Parts</h1>
-                <p>We provide the Bozeman, Montana Area with access <br>to the highest quality mountain biking gear.</p>
-                <p><a class="button" href="shop.html">SHOP GEAR &amp; PARTS</a></p>
+            <div class="menu-border"></div>
+
+            <div class="background">
+                <img src="img/sam-x-42021-unsplash.jpg">
+                <div class="slider">
+                    <h1>High Performance <br id="break">Bikes &amp; Parts</h1>
+                    <p>We provide the Bozeman, Montana Area with access <br>to the highest quality mountain biking gear.</p>
+                    <p><a class="button" href="shop.html">SHOP GEAR &amp; PARTS</a></p>
+                </div>
             </div>
+
+            <div class="gallery">
+                <div class="img-link">
+                    <img src="img/eddy-lackmann-57741-unsplash.jpg">
+                    <a href="shop.html"><h1>Shop</h1></a>
+                </div>
+                <div class="img-link">
+                    <img src="img/jared-weiss-228331-unsplash.jpg">
+                    <a href="repairs.html"><h1>Repairs</h1></a>
+                </div>
+                <div class="img-link">
+                    <img src="img/semih-aydin-32382-unsplash.jpg">
+                    <a href="tours.html"><h1>Tours</h1></a>
+                </div>
+                <div class="img-link">
+                    <img src="img/hunter-bryant-95397-unsplash.jpg">
+                    <a href="events.html"><h1>Events</h1></a>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <iframe src="https://snazzymaps.com/embed/61836" width="100%" style="border:none;"></iframe>
+                <div class="home-contact">
+                    <h3>Visit Us</h3>
+                    <p>1234 DOWNHILL ST.<br>BOZEMAN, MONTANA</p>
+                </div>
+                <div class="home-contact">
+                    <h3>Get in Touch</h3>
+                    <p>PHONE: <a href="tel:123-456-7890">(123) 456-7890</a><br>
+                    EMAIL: <a href="mailto=info@mountainspoke.com">info@mountainspoke.com</a></p>
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer-content">
+                    <a href="/"><img class="logo" src="img/logo.svg" alt="Mountain Spoke Logo"></a>
+                    <p>&copy; 2018 | Mountain Spoke | Built by Ethan Russon</p>
+                </div>
+            </footer>
         </div>
         
-        <div class="gallery">
-            <div class="img-link">
-                <img src="img/eddy-lackmann-57741-unsplash.jpg">
-                <a href="shop.html"><h1>Shop</h1></a>
+        <!-- overlay menu -->
+        <div id="mobile-nav" class="overlay" onclick="closeNav()">
+
+            <div class="overlay-content">
+                <a href="#to-gallery">galleries</a>
+                <a href="pricing.html">pricing</a>
+                <a href="about-us.html">about us</a>
+                <a href="contact.html">contact</a>
             </div>
-            <div class="img-link">
-                <img src="img/jared-weiss-228331-unsplash.jpg">
-                <a href="repairs.html"><h1>Repairs</h1></a>
-            </div>
-            <div class="img-link">
-                <img src="img/semih-aydin-32382-unsplash.jpg">
-                <a href="tours.html"><h1>Tours</h1></a>
-            </div>
-            <div class="img-link">
-                <img src="img/hunter-bryant-95397-unsplash.jpg">
-                <a href="events.html"><h1>Events</h1></a>
-            </div>
+
         </div>
-        
-        <div class="map-container">
-            <iframe  frameborder="0"
-            src="https://www.google.com/maps/embed/v1/place?q=place_id:Eiw1MzAwIFMgQ290dG9ud29vZCBSZCwgQm96ZW1hbiwgTVQgNTk3MTgsIFVTQQ&key=AIzaSyA4t6C78VCO5T5_x28pKJaE5KjJxNzczRI" allowfullscreen></iframe>
-            <div class="home-contact">
-                <h3>Visit Us</h3>
-                <p>1234 DOWNHILL ST.<br>BOZEMAN, MONTANA</p>
-            </div>
-            <div class="home-contact">
-                <h3>Get in Touch</h3>
-                <p>PHONE: <a href="tel:123-456-7890">(123) 456-7890</a><br>
-                EMAIL: <a href="mailto=info@mountainspoke.com">info@mountainspoke.com</a></p>
-            </div>
-        </div>
-        
-        <footer>
-            <div class="footer-content">
-                <a href="/"><img class="logo" src="img/logo.svg" alt="Mountain Spoke Logo"></a>
-                <p>&copy; 2018 | Mountain Spoke | Built by Ethan Russon</p>
-            </div>
-        </footer>
-        
         
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/mobile-menu.js"></script>
 
     </body>
 </html>
