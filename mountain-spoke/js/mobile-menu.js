@@ -1,11 +1,11 @@
-var blur1 = document.getElementById("blur1");
+var blur = document.getElementById("blur");
 
 function openNav() {
     document.getElementById("mobile-nav").style.width = "100%";
-    blur1.classList.add("blur-overlay");
+    blur.classList.add("blur-overlay");
 }
 
 function closeNav() {
     document.getElementById("mobile-nav").style.width = "0%";
-    blur1.classList.remove("blur-overlay");
+    blur.classList.remove("blur-overlay");
 } 

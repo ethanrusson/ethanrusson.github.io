@@ -7,17 +7,16 @@
         <meta name="description" content="Mountain Biking Gear, Repair, and Tours based in Bozeman, Montana">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300i,700i|Shrikhand">
     </head>
     <body>
-        <div id="blur1">     
+        <div id="blur">     
             <div class="nav">
                 <div class="nav-content">
-                    <a id="logo" href="/"><img class="logo" src="img/logo.svg" alt="Mountain Spoke Logo"></a>
+                    <a id="logo" href="index.html"><img class="logo" src="img/logo.svg" alt="Mountain Spoke Logo"></a>
                     <button onclick="openNav()">&#9776;</button>
                     <a id="menu1" href="shop.html">Shop</a>
                     <a id="menu2" href="repairs.html">Repairs</a>
@@ -28,13 +27,37 @@
             </div>
 
             <div class="menu-border"></div>
+            
+            <div class="arrows">
+                <a><img class="arrow-lt" src="img/arrow-lt.svg" onclick="plusDivs(-1)"></a>
+                <a><img class="arrow-rt" src="img/arrow-rt.svg" onclick="plusDivs(+1)"></a>
+            </div>
 
             <div class="background">
-                <img src="img/sam-x-42021-unsplash.jpg">
-                <div class="slider">
+                <img class="sliderImage" src="img/patrick-hendry-464055-unsplash.jpg">
+                <img class="sliderImage" src="img/david-marcu-125458-unsplash.jpg">
+                <img class="sliderImage" src="img/eerik-sandstrom-567001-unsplash.jpg">
+                <img class="sliderImage" src="img/semih-aydin-32382-unsplash.jpg">
+                
+                <div class="slider mySlides">
                     <h1>High Performance <br id="break">Bikes &amp; Parts</h1>
                     <p>We provide the Bozeman, Montana Area with access <br>to the highest quality mountain biking gear.</p>
                     <p><a class="button" href="shop.html">SHOP GEAR &amp; PARTS</a></p>
+                </div>
+                <div class="slider mySlides">
+                    <h1>Quick Repairs <br id="break">&amp; Tune-ups</h1>
+                    <p>Whether your bike took a rough hit or you just<br>need some simple adjustments, we can help.</p>
+                    <p><a class="button" href="shop.html">SEE REPAIR OPTIONS</a></p>
+                </div>
+                <div class="slider mySlides">
+                    <h1>Adventures Tours<br id="break">For Every Skill Level</h1>
+                    <p>We're experts on each of the epic trails in this area.<br>Let us show you!</p>
+                    <p><a class="button" href="shop.html">EXPLORE THE TRAILS</a></p>
+                </div>
+                <div class="slider mySlides">
+                    <h1>Upcoming Events <br id="break">For Enthusiasts</h1>
+                    <p>Check out our schedule of upcoming events<br>We've always got something fun planned!</p>
+                    <p><a class="button" href="shop.html">SEE EVENTS</a></p>
                 </div>
             </div>
 
@@ -58,15 +81,16 @@
             </div>
 
             <div class="map-container">
-                <iframe src="https://snazzymaps.com/embed/61836" width="100%" style="border:none;"></iframe>
-                <div class="home-contact">
-                    <h3>Visit Us</h3>
-                    <p>1234 DOWNHILL ST.<br>BOZEMAN, MONTANA</p>
-                </div>
+                <iframe src="https://snazzymaps.com/embed/61860" width="100%" style="border:none;"></iframe>
                 <div class="home-contact">
                     <h3>Get in Touch</h3>
                     <p>PHONE: <a href="tel:123-456-7890">(123) 456-7890</a><br>
                     EMAIL: <a href="mailto=info@mountainspoke.com">info@mountainspoke.com</a></p>
+                </div>
+                <div class="home-contact">
+                    <h3>Visit Us</h3>
+                    <a href="https://www.google.com/maps/dir/''/3950+Valley+Commons+Dr,+Bozeman,+MT+59718/data=!4m5!4m4!1m0!1m2!1m1!1s0x5345459ab72cb6df:0xbb98968f9648ea88?sa=X&ved=0ahUKEwi77pHv05_aAhXC5IMKHVWcAzkQwwUIKjAA">3950 Valley Commons Drive<br>Bozeman, MT</a>
+                    
                 </div>
             </div>
 
@@ -82,10 +106,11 @@
         <div id="mobile-nav" class="overlay" onclick="closeNav()">
 
             <div class="overlay-content">
-                <a href="#to-gallery">galleries</a>
-                <a href="pricing.html">pricing</a>
-                <a href="about-us.html">about us</a>
-                <a href="contact.html">contact</a>
+                <a href="shop.html">Shop</a>
+                <a href="repairs.html">Repairs</a>
+                <a href="tours.html">Tours</a>
+                <a href="events.html">Events</a>
+                <a href="contact.html">Contact</a>
             </div>
 
         </div>

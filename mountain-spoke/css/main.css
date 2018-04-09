@@ -106,52 +106,58 @@ h1 {
     font-weight: normal;
     font-size: 1.5em;
 }
-
 h3 {
     font-family: "Roboto Condensed", sans-serif; 
     font-weight: 700;
     color: rgba(17, 63, 56, 1);
     text-transform: uppercase;
 }
-
 p {
     font-family: "Roboto Condensed", sans-serif; 
     color: rgba(17, 63, 56, 1);
 }
-
+li {
+    font-family: "Roboto Condensed", sans-serif; 
+    color: rgba(17, 63, 56, 1);
+}
 a {
     font-family: "Roboto Condensed", sans-serif;
     font-weight: bold;
     text-decoration: none;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
 }
-
 .button {
     border: 2px solid rgba(248, 78, 0, 1);
     padding: 5px 10px 5px 10px;
 }
-
 .button:hover {
     border: 2px solid rgba(248, 78, 0, 0);
     background-color: rgba(248, 78, 0, 0.6);
     color: white;
 }
-
 .background {
     width: 100%;
     height: 600px;
     z-index: -1;
 }
-
 .background img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: 50% 100%;
 }
-
-
+.background-short {
+    width: 100%;
+    height: 200px;
+    z-index: -1;
+    border-bottom: 4px solid rgba(17, 63, 56, 1);
+}
+.background-short img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 .nav {
     position: fixed; 
@@ -184,6 +190,11 @@ a {
 .logo {
     height: 30px;
     margin-top: -4px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+.logo:hover {
+    opacity: 0.5;
 }
 
 button {
@@ -220,7 +231,8 @@ button {
 .slider p {
     color: rgba(210, 207, 194, 1);
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
+    font-size: 0.85em;
 }
 .slider a {
     color: rgba(210, 207, 194, 1);
@@ -229,18 +241,194 @@ button {
 #break {
     display: static;
 }
+.arrows {
+    position: absolute;
+    top: 460px;
+    width: 100%;
+    height: auto;
+}
+.arrows img:hover { 
+    opacity: 0.6;
+}
+.arrows img:active {
+    opacity: 1;
+}
+.arrow-lt {
+    position: absolute;
+    left: 10px;
+    z-index: 100;
+    height: 40px;
+}
+.arrow-rt {
+    position: absolute;
+    right: 10px;  
+    z-index: 100;
+    height: 40px;
+}
+
+.shop {
+    padding-top: 20px;
+    width: 100%;
+}
+.shop h1 {
+    text-align: center;
+    color: rgba(17, 63, 56, 1);
+    padding-bottom: 20px;
+}
+.products {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: auto;
+    grid-column-gap: 50px;
+    padding: 0px 20px 0px 20px;
+}
+.bike {
+    position: relative;
+    height: 480px;
+}
+.bike img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    position: absolute;
+}
+.bike h3:nth-child(even) {
+    position: absolute;
+    top: 200px;
+}
+.bike h3:nth-child(odd) {
+    position: absolute;
+    top: 200px;
+    right: 0px;
+    color: rgba(210, 207, 194, 1);
+}
+.bike ul {
+    position: relative;
+    top: 244px;
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    border-top: 4px solid rgba(17, 63, 56, 1);
+}
+.bike li:first-child {
+    padding-top: 20px;
+}
+
+.tech-specs h3 {
+    text-align: center;
+    color: rgba(210, 207, 194, 1);
+}
+.specs {
+    top: 200px;
+}
+.specs ul {
+    list-style: none;
+    padding-left: 0;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.specs p {
+    padding-top: 20px;
+}
+
+.trail-map {
+    position: relative;
+    height: 400px;
+}
+.trail-map img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    position: absolute;
+    border: 2px solid rgba(210, 207, 194, 1);
+}
+.trail-map h3:nth-child(even) {
+    position: absolute;
+    top: 200px;
+}
+.trail-map h3:nth-child(odd) {
+    position: absolute;
+    top: 200px;
+    right: 0px;
+    color: rgba(210, 207, 194, 1);
+}
+.trail-map ul {
+    position: relative;
+    top: 244px;
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    border-top: 4px solid rgba(17, 63, 56, 1);
+}
+.trail-map li:first-child {
+    padding-top: 20px;
+}
+
+.table {
+    padding: 0px 20px 50px 20px; 
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    text-align: left;
+}
+th, td {
+    padding: 0px 10px 0px 10px;
+}
+th {
+    height: 60px;
+    font-family: "Roboto Condensed", sans-serif; 
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: rgba(210, 207, 194, 1);
+    color: white;
+}
+td {
+    height: 50px;
+    font-family: "Roboto Condensed", sans-serif; 
+    font-weight: 200;
+    color: rgba(17, 63, 56, 1);
+    text-transform: uppercase;
+    border-bottom: 4px solid rgba(210, 207, 194, 0.2);
+}
+tr:hover {
+    background-color: rgba(210, 207, 194, 0.2);
+}
+
+.divider {
+    width: 100%;
+    border-top: 4px solid rgba(210, 207, 194, 1);
+}
+.paragraph {
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.paragraph h1 {
+    color: rgba(17, 63, 56, 1);
+    padding-top: 30px;
+}
+.paragraph p {
+    padding-bottom: 20px;
+}
+.paragraph a {
+    color: rgba(17, 63, 56, 1);
+}
 
 .gallery {
     padding-top: 50px;
     display: grid;
     grid-template-columns: 1fr;
     grid-row: auto;
-    grid-gap: 50px 0px;
+    grid-row-gap: 10px;
     width: 100%;
     z-index: -1;
 }
 .img-link {
-    height: 240px;
+    height: 72px;
     position: relative;
 }
 .img-link img {
@@ -252,20 +440,24 @@ button {
 .img-link a {
     display: flex;
     flex-grow: 1;
-    height: 30%;
+    height: 100%;
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 35%;
+    top: 0;
     background-color: rgba(248, 78, 0, 0.6);
+    -webkit-backdrop-filter: saturate(120%) blur(10px);
+    backdrop-filter: saturate(120%) blur(10px);
 }
 .img-link img:hover ~ a{
     top: 0;
     height: 100%;
+    background-color: rgba(17, 63, 56, 0.8);
 }
 .img-link a:hover {
     top: 0;
     height: 100%;
+    background-color: rgba(17, 63, 56, 0.8);
 }
 .img-link a h1{
     color: white;
@@ -331,7 +523,6 @@ footer p {
     transition: 0.4s; 
     z-index: 1;
 }
-
 .overlay { 
     height: 100%;
     width: 0;
@@ -343,7 +534,6 @@ footer p {
     overflow-x: hidden;
     transition: 0.4s; 
 }
-
 .overlay-content {
     position: relative;
     top: 25%;
@@ -351,7 +541,6 @@ footer p {
     text-align: center; 
     margin-top: 30px; 
 }
-
 .overlay a {
     padding: 12px;
     text-transform: uppercase;
@@ -367,6 +556,7 @@ footer p {
 
 
 /*MEDIUM*/
+
 @media only screen and (min-width: 37.5em) {
     #break {
         display: none;
@@ -407,11 +597,47 @@ footer p {
         top: 400px;
         height: 200px;
     }
+    .slider p{
+        font-size: 1em;
+        padding-bottom: 20px;
+    }
+    .arrows {
+        top: 470px;
+    }
+    .arrow-lt {
+        left: 20px;
+        height: 60px;
+    }
+    .arrow-rt {
+        right: 20px;  
+        height: 60px;
+    }
+    
+    .products {
+        padding: 0px 150px 0px 150px;
+    }
     
     .gallery {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 0px 0px;
     }
+    .img-link {
+        height: 240px;
+    }
+    .img-link a {
+        height: 30%;
+        top: 35%;
+    }
+    
+    th, td {
+        padding: 0px 20px 0px 20px;
+    }   
+    
+    .paragraph {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
     
     .map-container {
         grid-template-columns: repeat(4, 1fr);
@@ -435,6 +661,7 @@ footer p {
 
 
 /*LARGE*/
+
 @media only screen and (min-width: 64em) {
     h1 {
         font-size: 2em;
@@ -468,6 +695,15 @@ footer p {
         margin-top: -10px;
     }
     
+    .products {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0px 50px 0px 50px;
+}
+    
+    .table {
+        padding: 0px 50px 50px 50px;
+    }
+    
     .gallery {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -486,7 +722,8 @@ footer p {
         padding: 60px 0px 60px 0px;
     }
     .home-contact:nth-child(odd) {
-        border: none;
+        border-left: 4px solid rgba(17, 63, 56, 1);
+        border-top: none;
     }
     .home-contact:nth-child(even) {
         border: none;
