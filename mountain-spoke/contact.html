@@ -1,0 +1,112 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Events | Mountain Spoke | Mountain Biking Gear, Repair, and Tours | Bozeman, Montana</title>
+        <meta name="description" content="Mountain Biking Gear, Repair, and Tours based in Bozeman, Montana">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="icon.png">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300i,700i|Shrikhand">
+    </head>
+    <body>
+        <div id="blur">     
+            <div class="nav">
+                <div class="nav-content">
+                    <a id="logo" href="index.html"><img class="logo" src="img/logo.svg" alt="Mountain Spoke Logo"></a>
+                    <button onclick="openNav()">&#9776;</button>
+                    <a id="menu1" href="shop.html">Shop</a>
+                    <a id="menu2" href="repairs.html">Repairs</a>
+                    <a id="menu3" href="tours.html">Tours</a>
+                    <a id="menu4" href="events.html">Events</a>
+                    <a id="menu5" class="active" href="contact.html">Contact</a>
+                </div>
+            </div>
+
+            <div class="menu-border"></div>
+
+            <div class="background-short">
+                <img src="img/events.jpg">
+            </div>
+            
+            <div class="shop">
+                <h1>Contact</h1>
+                
+                <div class="contact">
+                    <div class="register-div">
+                        <p>First Name:</p> 
+                        <input type="text" name="firstname" placeholder=" First Name" required><br>
+                    </div>
+                    <div class="register-div">
+                        <p>Last Name:</p> 
+                        <input type="text" name="lastname" placeholder=" Last Name" required><br>
+                    </div>
+                    <div class="register-div">
+                        <p>Email:</p> 
+                        <input type="email" name="email" placeholder=" johndoe@gmail.com" required><br>
+                    </div>
+                    <div class="register-div">
+                        <p>Phone:</p> 
+                        <input type="phone" name="phone" placeholder=" (123)456-7890" required><br>
+                    </div>
+                    <div class="register-div" id="message">
+                        <p>Message</p>
+                        <textarea required></textarea>
+                    </div>
+                </div>
+                    <div class="register-div">
+                        <a class="button" onclick="thankYou()">Submit</a>
+                    </div>
+                    <div class="register-div hidden" id="thankyou">
+                        <h3>Thank You</h3>
+                        <p>Thanks for reaching out! Will will get back to you as soon as possible!</p>
+                    </div>
+            </div>
+            
+            
+                <div class="contact-container">
+                    <div class="main-contact">
+                        <h3>Get in Touch</h3>
+                        <p>PHONE: <a href="tel:123-456-7890">(123) 456-7890</a><br>
+                        EMAIL: <a href="mailto=info@mountainspoke.com">info@mountainspoke.com</a></p>
+                    </div>
+                    <div class="main-contact">
+                        <h3>Visit Us</h3>
+                        <a href="https://www.google.com/maps/dir/''/3950+Valley+Commons+Dr,+Bozeman,+MT+59718/data=!4m5!4m4!1m0!1m2!1m1!1s0x5345459ab72cb6df:0xbb98968f9648ea88?sa=X&ved=0ahUKEwi77pHv05_aAhXC5IMKHVWcAzkQwwUIKjAA">3950 Valley Commons Drive<br>Bozeman, MT</a>
+                    </div>
+                    <iframe src="https://snazzymaps.com/embed/61860" width="100%" style="border:none;"></iframe>
+                </div>
+
+            <footer>
+                <div class="footer-content">
+                    <a href="/"><img class="logo" src="img/logo.svg" alt="Mountain Spoke Logo"></a>
+                    <p>&copy; 2018 | Mountain Spoke | Built by Ethan Russon</p>
+                </div>
+            </footer>
+        </div>
+        
+        <!-- overlay menu -->
+        <div id="mobile-nav" class="overlay" onclick="closeNav()">
+
+            <div class="overlay-content">
+                <a href="shop.html">Shop</a>
+                <a href="repairs.html">Repairs</a>
+                <a href="tours.html">Tours</a>
+                <a href="events.html">Events</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+        </div>
+        
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/mobile-menu.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,203 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Events | Mountain Spoke | Mountain Biking Gear, Repair, and Tours | Bozeman, Montana</title>
+        <meta name="description" content="Mountain Biking Gear, Repair, and Tours based in Bozeman, Montana">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="icon.png">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300i,700i|Shrikhand">
+    </head>
+    <body>
+        <div id="blur">     
+            <div class="nav">
+                <div class="nav-content">
+                    <a id="logo" href="index.html"><img class="logo" src="img/logo.svg" alt="Mountain Spoke Logo"></a>
+                    <button onclick="openNav()">&#9776;</button>
+                    <a id="menu1" href="shop.html">Shop</a>
+                    <a id="menu2" href="repairs.html">Repairs</a>
+                    <a id="menu3" href="tours.html">Tours</a>
+                    <a id="menu4" class="active" href="events.html">Events</a>
+                    <a id="menu5" href="contact.html">Contact</a>
+                </div>
+            </div>
+
+            <div class="menu-border"></div>
+
+            <div class="background-short">
+                <img src="img/events.jpg">
+            </div>
+            
+            <div class="shop">
+                <h1>Events</h1>
+                <div class="events-container">
+                    <div class="events-map">
+                        <img src="img/continental-divide.png">
+                        <h3>Cycle the Continental Divide</h3>
+                        <ul>
+                            <li><strong>Annual Event - May 12, 2018</strong></li>
+                            <li>Event begins at 7AM</li>
+                            <li>$48/person - Includes Entrance, Water Bottle, and Tee</li>
+                            <li>*Payment for entry is made at event.</li>
+                            <br>
+                            <li><strong>Course Details</strong></li>
+                            <li>280 Total Miles</li>
+                            <li>Intermediate Terrain</li>
+                            <li>Both On &amp; Off-Road</li>
+                            <br>
+                            <li>Please contact as for any more info regarding this event! <br>We hope to see you there!</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <h3>Registration Form</h3>
+                
+                <div class="register">
+                    <div class="register-div">
+                        <p>First Name:</p> 
+                        <input type="text" name="firstname" placeholder=" First Name" required><br>
+                    </div>
+                    <div class="register-div">
+                        <p>Last Name:</p> 
+                        <input type="text" name="lastname" placeholder=" Last Name" required><br>
+                    </div>
+                    <div class="register-div">
+                        <p>Email:</p> 
+                        <input type="email" name="email" placeholder=" johndoe@gmail.com" required><br>
+                    </div>
+                    <div class="register-div">
+                        <p>Phone:</p> 
+                        <input type="phone" name="phone" placeholder=" (123)456-7890" required><br>
+                    </div>
+                    <div class="register-div">
+                        <p>Date of Birth:</p> 
+                        <input type="date" name="date" placeholder=" (123)456-7890" required><br>
+                    </div>
+                    <div class="register-div state rounded">
+                        <p>Home State:</p> 
+                        <select>
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="CA">California</option>
+                            <option value="CO">Colorado</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="DE">Delaware</option>
+                            <option value="DC">District Of Columbia</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="ID">Idaho</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IN">Indiana</option>
+                            <option value="IA">Iowa</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="ME">Maine</option>
+                            <option value="MD">Maryland</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MI">Michigan</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MO">Missouri</option>
+                            <option value="MT">Montana</option>
+                            <option value="NE">Nebraska</option>
+                            <option value="NV">Nevada</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="NJ">New Jersey</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="NY">New York</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="OH">Ohio</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="OR">Oregon</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="TX">Texas</option>
+                            <option value="UT">Utah</option>
+                            <option value="VT">Vermont</option>
+                            <option value="VA">Virginia</option>
+                            <option value="WA">Washington</option>
+                            <option value="WV">West Virginia</option>
+                            <option value="WI">Wisconsin</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                    </div>
+                    <div class="register-div">
+                        <p>Special Accommodations</p>
+                        <textarea required></textarea>
+                    </div>
+                    
+                    <div class="register-div">
+                        <a class="button" onclick="thankYou()">Submit</a>
+                        <p id="submission">Upon submission, you will be emailed details and placed on the list of participants.</p>
+                    </div>
+                </div>
+                    <div class="register-div hidden" id="thankyou">
+                        <h3>Thank You</h3>
+                        <p>Thanks for registering! You have been emailed details and placed on the list of participants. We're excited to see you at the event!</p>
+                    </div>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <div class="paragraph">
+                <h1>Our Guarantee</h1>
+                <p>We feature a limited selection of bikes, but you can be sure that you'll be set up with a quality bike when you shop with us. In addition to these three solid models, we have access to countless upgrades and parts to customize your bike.</p>
+                <p><a class="button" href="shop.html">SEE REPAIR &amp; CUSTOMIZATION OPTIONS</a></p>
+            </div>
+
+            <div class="map-container">
+                <iframe src="https://snazzymaps.com/embed/61860" width="100%" style="border:none;"></iframe>
+                <div class="home-contact">
+                    <h3>Get in Touch</h3>
+                    <p>PHONE: <a href="tel:123-456-7890">(123) 456-7890</a><br>
+                    EMAIL: <a href="mailto=info@mountainspoke.com">info@mountainspoke.com</a></p>
+                </div>
+                <div class="home-contact">
+                    <h3>Visit Us</h3>
+                    <a href="https://www.google.com/maps/dir/''/3950+Valley+Commons+Dr,+Bozeman,+MT+59718/data=!4m5!4m4!1m0!1m2!1m1!1s0x5345459ab72cb6df:0xbb98968f9648ea88?sa=X&ved=0ahUKEwi77pHv05_aAhXC5IMKHVWcAzkQwwUIKjAA">3950 Valley Commons Drive<br>Bozeman, MT</a>
+                    
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer-content">
+                    <a href="/"><img class="logo" src="img/logo.svg" alt="Mountain Spoke Logo"></a>
+                    <p>&copy; 2018 | Mountain Spoke | Built by Ethan Russon</p>
+                </div>
+            </footer>
+        </div>
+        
+        <!-- overlay menu -->
+        <div id="mobile-nav" class="overlay" onclick="closeNav()">
+
+            <div class="overlay-content">
+                <a href="shop.html">Shop</a>
+                <a href="repairs.html">Repairs</a>
+                <a href="tours.html">Tours</a>
+                <a href="events.html">Events</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+        </div>
+        
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/mobile-menu.js"></script>
+
+    </body>
+</html>

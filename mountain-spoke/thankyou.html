@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Frankin City Weather Report</title>
+    <meta name="author" content="Ethan Russon">
+    <meta name="description" content="Accurate weather updates and storm info for Nimbus County">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300,300i,700,700i,900,900i" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet"> 
+    <link href="styles/city-main.css" rel="stylesheet">    
+    <link href="styles/city-medium.css" rel="stylesheet">  
+    <link href="styles/city-large.css" rel="stylesheet"> 
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="/assignments/weathersite/index.html"> <img id="logo" src="images/ncw-logo.png" alt="The site logo"> </a>
+        </div>
+        <nav>
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <div class="container-nav">
+            <ul class="navigation">
+                <li><a href="/assignments/lesson-9/index.html">Home</a></li>
+                <li><a href="franklin-9.html">Franklin</a></li>
+                <li><a href="#">Greenville</a></li>
+                <li><a href="#">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery-9.html">Gallery</a></li>
+            </ul>	
+            </div>
+        </nav>
+    </header>
+
+    <main>  
+        <div class="thankyou">
+            <h1>Thank You</h1>
+            <h3>Your input is what helps make Nimbus County Weather as useful and up-to-date as possible.</h3>
+        </div>
+    </main>
+    
+   <footer>
+        <aside>
+            <p>4242 Nimbus Dr. | Franklin, MN 42424 | <a class="footer-link" href="#">123-456-7890</a></p>
+            <br>
+        </aside>
+        <p class="footer-bar">&copy;2017 All Rights Reserved | Nimbus County Weather | <span id="currentdate"></span></p>
+    </footer>
+    
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/adjust.js"></script>
+        <script src="scripts/currentdate.js"></script>
+    
+    </body>
+</html>

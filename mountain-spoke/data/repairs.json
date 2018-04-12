@@ -1,0 +1,59 @@
+{
+    "repairs": [
+        {
+            "service": "SIMPLE REPAIR",
+            "price": "$15 + COST OF PARTS",
+            "timeframe": "2-3 DAYS"
+        },
+        {
+            "service": "ADVANCED REPAIR",
+            "price": "$60 + COST OF PARTS",
+            "timeframe": "7-10 DAYS"
+        },
+        {
+            "service": "Shimano Shifters<",
+            "price": "$24.95/each",
+            "timeframe": "~"
+        },
+        {
+            "service": "Generic Shifters",
+            "price": "$12.95/each",
+            "timeframe": "~"
+        },
+        {
+            "service": "Rear Derailleur",
+            "price": "$69.95",
+            "timeframe": "~"
+        },
+        {
+            "service": "RXO Brakes",
+            "price": "$14.95/each",
+            "timeframe": "~"
+        },
+        {
+            "service": "Generic Brakes",
+            "price": "$9.95/each",
+            "timeframe": "~"
+        },
+        {
+            "service": "Disc Brakes",
+            "price": "$59.95",
+            "timeframe": "~"
+        },
+        {
+            "service": "Hollow Pin Chain,
+            "price": "$29.95/each",
+            "timeframe": "~"
+        },
+        {
+            "service": "Mud Tire",
+            "price": "$39.95/each",
+            "timeframe": "~"
+        },
+        {
+            "service": "Hybrid Tire",
+            "price": "$39.95/each",
+            "timeframe": "~"
+        }
+    ]
+}

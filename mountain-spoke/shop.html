@@ -18,7 +18,7 @@
                 <div class="nav-content">
                     <a id="logo" href="index.html"><img class="logo" src="img/logo.svg" alt="Mountain Spoke Logo"></a>
                     <button onclick="openNav()">&#9776;</button>
-                    <a id="menu1" href="shop.html">Shop</a>
+                    <a id="menu1" class="active" href="shop.html">Shop</a>
                     <a id="menu2" href="repairs.html">Repairs</a>
                     <a id="menu3" href="tours.html">Tours</a>
                     <a id="menu4" href="events.html">Events</a>
@@ -29,17 +29,20 @@
             <div class="menu-border"></div>
 
             <div class="background-short">
-                <img src="img/william-hook-58602-unsplash.jpg">
+                <img src="img/shop.jpg">
             </div>
             
             <div class="shop">
                 <h1>Shop</h1>
                 <div class="products">
-                    <div class="bike">
-                        <img src="img/eddy-lackmann-57741-unsplash.jpg">
-                        <h3 >M-240 MOUNTAIN</h3>
+                    <div class="bike" id="bike1-div">
+                        <img src="img/bike2.jpg">
+                        <h3 >M-240 Road</h3>
                         <h3>$1995</h3>
-                        <ul>
+                        
+                        <p><a class="button" id="bike1-button" onclick="expand1()">DETAILS +</a></p>
+                        
+                        <ul class="invisible" id="bike1">
                             <li>700cc Wheels</li>
                             <li>1x12 Speed Drivetrain</li>
                             <li>Aluminum Alloy Frame</li>
@@ -49,25 +52,31 @@
                             <li>RWC X12L Chain</li>
                         </ul>
                     </div>
-                    <div class="bike">
-                        <img src="img/derek-thomson-271991-unsplash.jpg">
+                    <div class="bike" id="bike2-div">
+                        <img src="img/bike1.jpg">
                         <h3>R-640 HYBRID</h3>
                         <h3>$2495</h3>
-                        <ul>
-                            <li>700cc Wheels</li>
+                        
+                        <p><a class="button" id="bike2-button" onclick="expand2()">DETAILS +</a></p>
+                        
+                        <ul class="invisible" id="bike2">
+                            <li>600cc Wheels</li>
                             <li>1x12 Speed Drivetrain</li>
-                            <li>Aluminum Alloy Frame</li>
-                            <li>Shimano Brakes</li>
+                            <li>Titanium Alloy Frame</li>
+                            <li>EXO Brakes</li>
                             <li>Tubeless Tires</li>
-                            <li>Apex Shifters</li>
-                            <li>RWC X12L Chain</li>
+                            <li>EXO Shifters</li>
+                            <li>RWC Z160 Chain</li>
                         </ul>
                     </div>
-                    <div class="bike">
-                        <img src="img/riley-harrison-483626-unsplash.jpg">
+                    <div class="bike" id="bike3-div">
+                        <img src="img/bike3.jpg">
                         <h3>Y-480 HARDTAIL</h3>
                         <h3>$995</h3>
-                        <ul>
+                        
+                        <p><a class="button" id="bike3-button" onclick="expand3()">DETAILS +</a></p>
+                        
+                        <ul class="invisible" id="bike3">
                             <li>700cc Wheels</li>
                             <li>1x12 Speed Drivetrain</li>
                             <li>Aluminum Alloy Frame</li>
@@ -85,7 +94,7 @@
             <div class="paragraph">
                 <h1>Our Guarantee</h1>
                 <p>We feature a limited selection of bikes, but you can be sure that you'll be set up with a quality bike when you shop with us. In addition to these three solid models, we have access to countless upgrades and parts to customize your bike.</p>
-                <p><a class="button" href="shop.html">SEE REPAIR &amp; CUSTOMIZATION OPTIONS</a></p>
+                <p><a class="button" href="repairs.html">SEE REPAIR &amp; CUSTOMIZATION OPTIONS</a></p>
             </div>
 
             <div class="map-container">
