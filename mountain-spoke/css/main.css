@@ -324,7 +324,6 @@ button {
     top: 460px;
 }
 
-
 .tech-specs h3 {
     text-align: center;
     color: rgba(210, 207, 194, 1);
@@ -659,6 +658,9 @@ footer {
 footer p {
     color: rgba(210, 207, 194, 1);
     font-size: 0.7em;
+}
+footer a {
+    color: rgba(210, 207, 194, 1);
 }
 .footer-content {
     padding-top: 40px;
